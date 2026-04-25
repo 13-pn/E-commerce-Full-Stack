@@ -15,10 +15,7 @@ cloudinary.config({
   api_secret: "9AetL0aZWADHCpCfxbY786XnsYQ",
 });
 
-app.use(cors({
-  origin: "https://your-frontend.onrender.com"
-}));
-
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://Pawan:Pvn@cluster0.xdjswoz.mongodb.net/GarhKumaonCrafts?appName=Cluster0")
@@ -145,7 +142,9 @@ app.delete("/deleteproduct/:id", async (req, res) => {
   }
 });
 
-
+app.get('/',(req,res)=>{
+  res.send("Api is running")
+})
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
