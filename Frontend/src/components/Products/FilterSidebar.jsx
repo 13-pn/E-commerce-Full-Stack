@@ -16,7 +16,7 @@ const FilterSidebar = ({ filters, setFilters, onClear }) => {
   };
 
   return (
-   <div className="filter-sidebar" style={{position:'fixed',height:'100%' ,width:'20%',paddingTop:'170px',zIndex:'5'}}>
+   <div className="filter-sidebar" style={{position:'fixed',height:'100%',paddingTop:'170px',zIndex:'5'}}>
 
 
   <div className="filter-header d-flex justify-content-md-between justify-content-center align-items-center gap-2 gap-md-0">
