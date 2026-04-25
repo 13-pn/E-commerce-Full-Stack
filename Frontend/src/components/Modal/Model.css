@@ -1,0 +1,56 @@
+/* Model.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;   /* must */
+  height: 100vh;  /* must */
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  padding: 20px;
+  z-index: 2100;
+  height: 90vh;
+}
+
+/* Modal inner scroll */
+.modal-content {
+  overflow-y: auto;
+}
+
+/* Image control */
+.main-img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+  .main-img {
+    max-height: 150px;
+  }
+
+  .modal-content {
+    width: 60%;
+    /* height: 95vh; */
+    padding: 10px;
+  }
+
+  .modal-content h1 {
+    font-size: 16px;
+  }
+
+  .modal-content button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

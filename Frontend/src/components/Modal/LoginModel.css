@@ -1,0 +1,28 @@
+/* Model.css */
+.Loginmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;   /* must */
+  height: 100vh;  /* must */
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.Loginmodal-content {
+  border-radius: 8px;
+  max-width: 500px;
+  width: 25%;
+  z-index: 2100;
+  height: 90vh;
+}
+
+
+@media (max-width: 765px) {
+  .modal-content {
+    width: 80%;
+  }
+}

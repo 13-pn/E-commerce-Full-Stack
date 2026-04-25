@@ -1,0 +1,22 @@
+body {
+  background: #fff;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 247, 237),
+    rgb(254, 226, 226)
+  );
+ 
+}
+
+.mehroon-color{
+    color:#7A2E22;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

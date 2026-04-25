@@ -1,0 +1,121 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.border-danger {
+  border-bottom: 4px solid #7f1d1d ;
+}
+
+.bg-light {
+  background-color: #fff7ed ;
+}
+
+.text-danger {
+  color: #7f1d1d ;
+}
+
+.text-dark {
+  color: #dc2626 ;
+}
+
+ 
+h4 {
+  font-size: 1.5rem ;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.875rem ;
+  }
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1) ;
+}
+
+.border-end {
+  border-right: 4px solid #7f1d1d ;
+}
+
+.bg-light.border-end {
+  width: 80px;
+  padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .bg-light.border-end {
+    width: 256px;
+  }
+}
+
+.d-block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+  color: #7f1d1d;
+  border-left: 8px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.px-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.rounded {
+  border-radius: 0;
+}
+
+.d-block:hover {
+  background-color: #ffedd5;
+}
+
+.d-block.active {
+  background-color: #fecaca;
+  border-left: 8px solid #dc2626;
+  color: #7f1d1d;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .d-block {
+    justify-content: center;
+  }
+}
+
+.flex-grow-1 {
+  flex: 1;
+}
+
+/* Sidebar background + border */
+.bg-light {
+  background-color: #fff7ed; /* orange-50 */
+}
+
+.border-danger {
+  border-color: #7f1d1d;
+}
+
+/* NavLink base using bootstrap feel */
+.d-block.mb-2 {
+  color: #7f1d1d;
+  font-weight: 500;
+}
+
+/* Hover (bootstrap + slight custom) */
+.d-block.mb-2:hover {
+  background-color: #f8d7da; /* bootstrap danger light */
+}
+
+/* Active (Bootstrap style override) */
+.d-block.mb-2.active {
+  background-color: #f5c2c7; /* bootstrap danger soft */
+  color: #7f1d1d;
+  border-left: 4px solid #dc3545; /* bootstrap danger */
+}

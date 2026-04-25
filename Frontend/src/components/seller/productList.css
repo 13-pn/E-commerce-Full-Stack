@@ -1,0 +1,143 @@
+.product-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+  background: linear-gradient(to bottom right, #ffedd5, #fee2e2);
+  font-family: Poppins, sans-serif;
+}
+
+.product-wrapper {
+  width: 70%;
+}
+
+.line-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background: #b91c1c;
+}
+
+h1 {
+  color: #991b1b;
+  font-weight: bold;
+}
+
+h1 span {
+  color: #b91c1c;
+}
+
+p {
+  color: #b91b1b;
+}
+
+.table-box {
+  background: #ffedd5;
+  border: 2px solid #b91c1c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-header {
+  display: flex;
+  padding: 12px;
+  font-weight: 600;
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-top: 1px solid #fecaca;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+}
+
+.product-info img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #991b1b;
+}
+
+.price {
+  font-size: 13px;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.col {
+  width: 20%;
+  color: #991b1b;
+}
+
+.actions {
+  width: 20%;
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background: #b91c1c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .product-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-wrapper {
+    width: 100%;
+  }
+
+  .table-header {
+    display: none;
+  }
+
+  .product-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .product-info,
+  .col,
+  .actions {
+    width: 100% !important;
+  }
+
+  .actions {
+    justify-content: space-between;
+  }
+}

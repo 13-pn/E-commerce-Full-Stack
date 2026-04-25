@@ -1,0 +1,36 @@
+.nav-inp {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  height: 40px;
+}
+
+.nav-inp {
+  height: 100%;
+}
+
+.suggestions-list {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 100;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.suggestions-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f2f2f2;
+}
