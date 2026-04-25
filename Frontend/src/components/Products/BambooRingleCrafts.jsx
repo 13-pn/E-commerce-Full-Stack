@@ -12,7 +12,7 @@ const BambooRingleCrafts = () => {
     const [filteredProducts, setFilteredProducts] = useState([]);
 
    useEffect(() => {
-    fetch("http://your-backend.onrender.com/api/products?category=Aipan Art")
+    fetch("https://your-backend.onrender.com/api/products?category=Aipan Art")
     .then(res=>res.json())
     .then(data=>{
       setProducts(data);
