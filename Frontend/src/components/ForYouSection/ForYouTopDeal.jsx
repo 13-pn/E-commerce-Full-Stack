@@ -15,7 +15,7 @@ const ForYouTopDeal = () => {
         useEffect(() => {
           const fetchprod=async()=>{
             try{
-            let res=await fetch("https://your-backend.onrender.com/api/products?limit=5")
+            let res=await fetch("https://e-commerce-full-stack-63y6.onrender.com/api/products?limit=5")
             let data=await res.json();
             setproducts(data);
             setLoading(false)        

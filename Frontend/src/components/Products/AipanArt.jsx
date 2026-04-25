@@ -10,7 +10,7 @@ const AipanArt = () => {
     const [filteredProducts, setFilteredProducts] = useState([]);
 
    useEffect(() => {
-    fetch("https://your-backend.onrender.com/api/products?category=Aipan Art")
+    fetch("https://e-commerce-full-stack-63y6.onrender.com/api/products?category=Aipan Art")
     .then(res=>res.json())
     .then(data=>{
       setProducts(data);

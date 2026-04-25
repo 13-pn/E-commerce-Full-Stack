@@ -26,7 +26,7 @@ const AddProduct = () => {
     return toast.error('All fields are required....')
   }
   try {
-    const res = await fetch("https://your-backend.onrender.com/api/products", {
+    const res = await fetch("https://e-commerce-full-stack-63y6.onrender.com/api/products", {
       method: "POST",
       body: fd, 
     });

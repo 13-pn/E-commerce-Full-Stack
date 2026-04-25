@@ -23,7 +23,7 @@ export default function UpdateModel({
 
     try {
       const res = await fetch(
-        `https://your-backend.onrender.com/updateproducts/${id}`,
+        `https://e-commerce-full-stack-63y6.onrender.com/updateproducts/${id}`,
         {
           method: "PUT",
           headers: {

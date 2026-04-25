@@ -8,7 +8,7 @@ const ProductList = () => {
 
   const deleteProduct = async (id) => {
     try {
-      const res = await fetch(`https://your-backend.onrender.com/deleteproduct/${id}`, {
+      const res = await fetch(`https://e-commerce-full-stack-63y6.onrender.com/deleteproduct/${id}`, {
         method: "DELETE",
       });
 
@@ -27,7 +27,7 @@ const ProductList = () => {
   };
 
   const showdata = () => {
-    fetch("https://your-backend.onrender.com/api/products")
+    fetch("https://e-commerce-full-stack-63y6.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   };
